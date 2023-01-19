@@ -3083,6 +3083,4 @@ function Library:CreateWindow(...)
 end;
 
 
---return Library
-
-_G.Library = Library
+return Library
