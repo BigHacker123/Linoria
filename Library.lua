@@ -88,7 +88,7 @@ function Library:CreateLabel(Properties, IsHud, Size)
     local Size = Size or 12
     local _Instance = Library:Create('TextLabel', {
         BackgroundTransparency = 1;
-        Font = Enum.Font.RobotoMono;
+        Font = Enum.Font.Code;
         TextColor3 = Library.FontColor or Library.AccentColor;
         TextSize = Size;
         TextStrokeTransparency = 0;
@@ -105,7 +105,7 @@ function Library:CreateLabel2(Properties, IsHud, Size)
     local Size = Size or 12
     local _Instance = Library:Create('TextLabel', {
         BackgroundTransparency = 1;
-        Font = Enum.Font.RobotoMono;
+        Font = Enum.Font.Code;
         TextColor3 = Library.FontColor2;
         TextSize = Size;
         TextStrokeTransparency = 0;
@@ -2489,7 +2489,7 @@ function Library:CreateWindow(...)
         TextXAlignment = Enum.TextXAlignment.Left;
         ZIndex = 1;
         Parent = Inner;
-    }, nil, 16);
+    },);
 
     local MainSectionOuter = Library:Create('Frame', {
         BackgroundColor3 = Library.BackgroundColor;
@@ -2591,7 +2591,7 @@ function Library:CreateWindow(...)
             Text = Name;
             ZIndex = 1;
             Parent = TabButton;
-        }, nil, 16);
+        },);
 
         local Highlight = Library:Create('Frame', {
             BackgroundColor3 = Library.AccentColor;
